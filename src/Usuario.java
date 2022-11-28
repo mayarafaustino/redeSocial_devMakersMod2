@@ -18,7 +18,7 @@ public class Usuario {
     void exibirMenuUsuario(Scanner scanner) {
         boolean sair = false;
         System.out.println("");
-        System.out.println("Bem-vindo(a), " + this.nome + "! ");
+        System.out.println("====== Bem-vindo(a), " + this.nome + "! ======");
         do {
             System.out.println("");
             System.out.println(this.nome + ", o que deseja fazer agora?");
@@ -50,6 +50,10 @@ public class Usuario {
         System.out.println("");
         System.out.println("O que deseja postar?");
         String conteudo = scanner.nextLine();
+        if (conteudo.isBlank()) {
+            System.out.println("Tsc tsc tsc. Sua postagem não pode ser vazia, né?! Tente novamente");
+            return;
+        }
         Calendar calendar = Calendar.getInstance();
 
         this.posts[this.totalPosts] = new Post(Post.getDataFormatada(calendar), Post.getHoraFormatada(calendar), conteudo);
@@ -60,13 +64,13 @@ public class Usuario {
 
     void exibirTimeline() {
         System.out.println("");
-        System.out.println("Minhas postagens: ");
+        System.out.println("====== Minhas postagens: ======");
         for (Post post : this.posts) {
             if (post != null) {
                 System.out.printf("%s às %s - '%s' ", post.data, post.hora, post.conteudo);
                 System.out.println("");
             }
         }
+        System.out.println("================================");
     }
-
 }

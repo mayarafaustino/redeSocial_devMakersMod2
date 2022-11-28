@@ -12,13 +12,13 @@ public class RedeSocial {
         do {
             System.out.println("");
             System.out.println("");
-            System.out.println("======== socialBite ========");
+            System.out.println("=================== socialBite ==================");
+            System.out.println("== A rede social do desenvolvedor introvertido ==");
             System.out.println("");
             System.out.println("O que deseja fazer agora?");
             System.out.println("Digite 'E' para entrar");
             System.out.println("Digite 'C' para cadastra-se");
             System.out.println("Digite 'F' para fechar");
-            System.out.println("");
 
             String opcao = scanner.nextLine().toUpperCase();
 
@@ -54,21 +54,32 @@ public class RedeSocial {
         System.out.println("");
         System.out.println("Digite seu login:");
         String login = scanner.nextLine();
-        //verificar se já existe o login dentre os usuários
+        if (login.isBlank()) {
+            System.out.println("login inválido");
+            return;
+        }
         for (Usuario usuario : listaDePerfis) {
             if (usuario != null && login.equalsIgnoreCase(usuario.login)) {
-                System.out.println("O login escolhido já existe! Tente novamente com um outro login.");
+                System.out.println("Ops, o login escolhido já existe! Tente novamente com um outro login.");
                 return;
             }
         }
         System.out.println("Digite seu nome:");
         String nome = scanner.nextLine();
+        if (nome.isBlank()) {
+            System.out.println("Nome não pode ser vazio!");
+            return;
+        }
         System.out.println("Digite sua senha:");
         String senha = scanner.nextLine();
+        if (senha.isBlank()) {
+            System.out.println("Senha não pode ser vazia!");
+            return;
+        }
 
         listaDePerfis[totalUsuarios] = new Usuario(login, nome, senha);
         totalUsuarios++;
-        System.out.println("Usuário " + login + " cadastrado com sucesso!");
+        System.out.println("Usuário(a) " + login + " cadastrado(a) com sucesso!");
     }
 
     static int fazerLogin() throws UserNotFoundException, InvalidPasswordException {
@@ -93,4 +104,3 @@ public class RedeSocial {
         return indiceUsuario;
     }
 }
-
