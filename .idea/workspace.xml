@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e345b72-8fe8-49ab-9894-ac8149fab07a" name="Changes" comment="initial commit">
+    <list default="true" id="0e345b72-8fe8-49ab-9894-ac8149fab07a" name="Changes" comment="modificações na aparência console e verificação de string vazia">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/RedeSocial/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/RedeSocial/post/Post.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/RedeSocial/usuario/Usuario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RedeSocial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RedeSocial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InvalidPasswordException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/RedeSocial/exceptions/InvalidPasswordException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Post.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RedeSocial.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/RedeSocial/exceptions/UserNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Usuario.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,15 +44,35 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Mayara/IdeaProjects/redeSocial_devMakersMod2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.toDoOptions&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.RedeSocial.Main" />
+      <module name="redeSocial_devMakersMod1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.RedeSocial.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RedeSocial" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="RedeSocial" />
+      <option name="MAIN_CLASS_NAME" value="br.com.RedeSocial.redeSocial.RedeSocial" />
       <module name="redeSocial_devMakersMod1" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -50,6 +80,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.RedeSocial" />
       </list>
     </recent_temporary>
@@ -63,7 +94,20 @@
       <option name="presentableId" value="Default" />
       <updated>1669611347145</updated>
       <workItem from="1669611349837" duration="1110000" />
-      <workItem from="1669645770636" duration="2964000" />
+      <workItem from="1669645770636" duration="5029000" />
+      <workItem from="1669671068861" duration="794000" />
+      <workItem from="1670283803834" duration="878000" />
+      <workItem from="1670376054846" duration="1355000" />
+      <workItem from="1670447591413" duration="35000" />
+      <workItem from="1670614995074" duration="2902000" />
+      <workItem from="1670854661978" duration="6864000" />
+      <workItem from="1670893509658" duration="623000" />
+      <workItem from="1670950721557" duration="11540000" />
+      <workItem from="1671038394209" duration="6929000" />
+      <workItem from="1671053940207" duration="1227000" />
+      <workItem from="1671237528858" duration="1150000" />
+      <workItem from="1671400220856" duration="10447000" />
+      <workItem from="1671461118666" duration="9617000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1669612033764</created>
@@ -72,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669612033764</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="modificações na aparência console e verificação de string vazia">
+      <created>1669649354075</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669649354075</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -83,7 +134,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -91,6 +148,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="modificações na aparência console e verificação de string vazia" />
+    <option name="LAST_COMMIT_MESSAGE" value="modificações na aparência console e verificação de string vazia" />
   </component>
 </project>
