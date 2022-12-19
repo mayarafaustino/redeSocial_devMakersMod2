@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e345b72-8fe8-49ab-9894-ac8149fab07a" name="Changes" comment="modificações na aparência console e verificação de string vazia">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/RedeSocial/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/RedeSocial/post/Post.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/RedeSocial/usuario/Usuario.java" afterDir="false" />
+    <list default="true" id="0e345b72-8fe8-49ab-9894-ac8149fab07a" name="Changes" comment="first commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InvalidPasswordException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/RedeSocial/exceptions/InvalidPasswordException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Post.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RedeSocial.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/RedeSocial/exceptions/UserNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Usuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/RedeSocial/redeSocial/RedeSocial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/RedeSocial/redeSocial/RedeSocial.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +99,7 @@
       <workItem from="1671053940207" duration="1227000" />
       <workItem from="1671237528858" duration="1150000" />
       <workItem from="1671400220856" duration="10447000" />
-      <workItem from="1671461118666" duration="9617000" />
+      <workItem from="1671461118666" duration="10939000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1669612033764</created>
@@ -123,7 +115,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669649354075</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="first commit">
+      <created>1671478628423</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1671478628423</updated>
+    </task>
+    <task id="LOCAL-00004" summary="first commit">
+      <created>1671478946556</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1671478946556</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +155,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="modificações na aparência console e verificação de string vazia" />
-    <option name="LAST_COMMIT_MESSAGE" value="modificações na aparência console e verificação de string vazia" />
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
 </project>

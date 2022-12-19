@@ -63,7 +63,6 @@ public class RedeSocial {
                 }
                 default: {
                     System.out.println("Você não digitou uma opção válida. =/  Tente novamente.");
-                    //todo criar exceção para opção de menu invalida - usar tbm no menu br.com.RedeSocial.usuario
                 }
             }
         } while (!fechar);
@@ -78,7 +77,6 @@ public class RedeSocial {
         String login = scanner.nextLine();
         if (verificaSeStringEhVazia(login)) return;
         for (Usuario usuario : usuarios) {
-            //todo - separar em função verificarExistenciaDeLogin??
             if (usuario != null && login.equalsIgnoreCase(usuario.getLogin())) {
                 System.out.println("Ops, o login escolhido já existe! Tente novamente com um outro login.");
                 return;
@@ -194,13 +192,13 @@ public class RedeSocial {
         return false;
     }
 
-    public String formatarData(Calendar calendar) {
+    private String formatarData(Calendar calendar) {
         SimpleDateFormat dataFormatter = new SimpleDateFormat("dd/MM/yyyy");
         String dataFormatada = dataFormatter.format(calendar.getTime());
         return dataFormatada;
     }
 
-    public String formatarHora(Calendar calendar) {
+    private String formatarHora(Calendar calendar) {
         SimpleDateFormat timeFormatter = new SimpleDateFormat("HH:mm");
         String horaFormatada = timeFormatter.format(calendar.getTime());
         return horaFormatada;
