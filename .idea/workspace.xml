@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e345b72-8fe8-49ab-9894-ac8149fab07a" name="Changes" comment="first commit">
+    <list default="true" id="0e345b72-8fe8-49ab-9894-ac8149fab07a" name="Changes" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/RedeSocial/exceptions/InvalidPasswordException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/RedeSocial/exceptions/InvalidPasswordException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/RedeSocial/exceptions/UserNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/RedeSocial/exceptions/UserNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/RedeSocial/post/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/RedeSocial/post/Post.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/RedeSocial/redeSocial/RedeSocial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/RedeSocial/redeSocial/RedeSocial.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +102,7 @@
       <workItem from="1671053940207" duration="1227000" />
       <workItem from="1671237528858" duration="1150000" />
       <workItem from="1671400220856" duration="10447000" />
-      <workItem from="1671461118666" duration="10939000" />
+      <workItem from="1671461118666" duration="15979000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1669612033764</created>
@@ -129,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671478946556</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update">
+      <created>1671481011085</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1671481011085</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +166,7 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="modificações na aparência console e verificação de string vazia" />
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
 </project>

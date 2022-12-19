@@ -36,6 +36,4 @@ public class Post {
         this.conteudo = conteudo;
     }
 
-    //todo *futuramente* criar um setConteudo/outra função para editar um br.com.RedeSocial.post já feito. (pegar nova data e hora da edição...)
-
 }

@@ -97,12 +97,11 @@ public class RedeSocial {
 
     private Usuario fazerLogin() throws UserNotFoundException, InvalidPasswordException {
         Scanner scanner = new Scanner(System.in);
-        //pede o login pro br.com.RedeSocial.usuario
+
         System.out.println("");
         System.out.println("Digite seu login:");
         String login = scanner.nextLine();
 
-        //procura login digitado e, se achar, armazena o indice dele em indiceUsuario
         Usuario usuarioLogado = null;
         for (Usuario usuario : usuarios) {
             if (login.equalsIgnoreCase(usuario.getLogin())) {
@@ -111,33 +110,31 @@ public class RedeSocial {
                 break;
             }
         }
-
-        //caso não ache o login digitado:
         if (usuarioLogado == null) {
             throw new UserNotFoundException();
         }
 
-        //pede senha pro br.com.RedeSocial.usuario
         System.out.println("Digite sua senha:");
         String senha = scanner.nextLine();
-        //verifica se a senha bate com a senha do br.com.RedeSocial.usuario:
         if (!usuarioLogado.senhaValidada(senha)) {
             throw new InvalidPasswordException();
         }
-        //se td deu certo, retorna o indice do br.com.RedeSocial.usuario que fez login com sucesso
+
         return usuarioLogado;
     }
 
     private void exibirMenuUsuario(Usuario usuario) {
         Scanner scanner = new Scanner(System.in);
         boolean sair = false;
-        do {
             System.out.println("");
-            System.out.println("====== Bem-vindo(a), " + usuario.getNome() + "! ======");
+            System.out.println("========= Bem-vindo(a), " + usuario.getNome() + "! =========");
+            System.out.println("");
+        do {
+            System.out.println("=================================================");
             System.out.println("");
             System.out.println(usuario.getNome() + ", o que deseja fazer agora?");
-            System.out.println("'P' - para fazer um br.com.RedeSocial.post");
-            System.out.println("'T' - para ver sua Timeline");
+            System.out.println("'P' - para fazer uma publicação");
+            System.out.println("'T' - para ver sua timeline");
             System.out.println("'S' - para sair e voltar ao menu inicial");
             System.out.println("=================================================");
             String opcao = scanner.nextLine().toUpperCase();
@@ -163,7 +160,7 @@ public class RedeSocial {
 
     private void exibirTimelineUsuario(Usuario usuario) {
         System.out.println("");
-        System.out.println("=========== Minhas postagens: ===========");
+        System.out.println("============== Minhas postagens: ==============");
         System.out.println("");
         for (Post post : usuario.getPosts()) {
             if (post != null) {
@@ -172,7 +169,7 @@ public class RedeSocial {
             }
         }
         System.out.println("");
-        System.out.println("==========================================");
+        System.out.println("================================================");
     }
 
     private void postar(Usuario usuario) {
